@@ -43,6 +43,14 @@ export class LoginComponent implements OnInit {
   }
 
   facebookLogin() {
-    this.loginService.facebookLogin();
+    this.loginService.socialSignIn('facebook');
+  }
+
+  linkedinLogin() {
+    this.loginService.socialSignIn('linkedin');
+  }
+
+  twitterLogin() {
+    this.loginService.socialSignIn('twitter');
   }
 }

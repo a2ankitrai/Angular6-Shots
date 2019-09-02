@@ -1,0 +1,22 @@
+<div class="container">
+
+  <h2>CK Editor</h2>
+  
+  <button class="btn btn-primary" (click)="saveNote()">Console Log Note</button>
+  &nbsp;
+  <button class="btn btn-primary" (click)="popupNote()">Load Previous Note</button>
+  <br><br>
+
+  <ckeditor [editor]="Editor" [(ngModel)]="editorText"
+  
+   ></ckeditor>
+ 
+  <br>
+  
+   <!-- <div>
+      <pre>{{editorText}}</pre>
+  
+    </div> -->
+  
+  </div>
+  

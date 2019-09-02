@@ -64,7 +64,7 @@ export class LoginService {
     // window.location.replace(this.endpoint + 'oauth2/authorization/google');
   }
 
-  getSuccessLoginUserInfo(token): Observable<any> {
+  getSuccessLoginUserInfo(token: string): Observable<any> {
 
     let headers = new HttpHeaders();
     headers = headers.set('Authorization', 'Bearer ' + token);
